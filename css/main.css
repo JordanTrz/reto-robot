@@ -1,0 +1,175 @@
+/* GLOBAL */
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 50%;
+    height: 120px;
+    background: #9017EF;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    /* z-index: 1; */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0 0 10px 0;
+}
+header h1 {text-align: center;}
+
+header:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    transition: ease .3s;
+}
+
+/* CABEZA DE ROBOT */
+.head {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: #C4C4C4;
+    top: -200px;
+    left: 100px;
+    border-radius: 5px 5px 0 0;
+}
+
+.eye {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #FB1D1D;
+    top: 30px;
+}
+.right-e{right: 20px;}
+.left-e{left: 20px;}
+
+.mouth{
+    position: absolute;
+    height: 60px;
+    width: 150px;
+    background: #FB1D1D;
+    top: 120px;
+    right: 25px;
+}
+
+/* CUERPO ROBOT */
+.big-body {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background: #AD1010;
+    top: 350px;
+    left: 500px;
+    border-radius: 10px;
+}
+
+/* BRAZO ROBOT */
+.arm {
+    position: absolute;
+    height: 80px;
+    width: 200px;
+    background: #C4C4C4;
+    top: 100px;
+}
+.right-a{right: -50px; border-radius: 5px 0 0 5px;}
+.left-a{left: -50px; border-radius: 0 5px 5px 0;}
+
+.nail{
+    position: absolute;
+    height: 15px;
+    width: 25px;
+    background: #CF9729;
+}
+.right-n1{top: 12.5px; left: -10px;}
+.right-n2{top: 32.5px; left: -10px;}
+.right-n3{top: 52.5px; left: -10px;}
+.left-n1{top: 12.5px; right: -10px;}
+.left-n2{top: 32.5px; right: -10px;}
+.left-n3{top: 52.5px; right: -10px;}
+
+/* PIERNA ROBOT */
+.leg{
+    position: absolute;
+    height: 300px;
+    width: 100px;
+    background: #C4C4C4;
+    top: 360px;
+    border-radius: 5px 5px 0 0;
+}
+.right-l{right:60px;}
+.left-l{left:60px;}
+
+.shoe{
+    position: absolute;
+    height: 50px;
+    width: 140px;
+    background: #CF9729;
+    bottom: 0px;
+    border-radius: 5px 5px 0 0;
+}
+.right-s{right: -20px;}
+.left-s{left: -20px;}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #9017EF;
+    width: 10%;
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    overflow: hidden;
+    border-radius: 0 10px 0 0;
+}
+
+footer:hover {
+    box-shadow: 6px -6px 5px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 6px -6px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px -6px 5px 0px rgba(0,0,0,0.3);
+    transition: ease .3s;
+}
+
+.fa-twitter {
+    font-size: 24px;
+    color: white;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.fa-facebook {
+    font-size: 24px;
+    color: white;
+}
+
+/* PRUEBAS */
+.big-body:hover .eye{
+    height: 20px;
+    width: 70px;
+    top: 50px;
+}
+
+.big-body:hover .mouth{
+    height: 100px;
+    width: 200px;
+    background: url(../icon/what.png);
+    background-size: cover;
+    top: 95px;
+    right: 1.5px;
+}
+
+.big-body:hover .right-a{right: -200px; border-radius: 0 5px 5px 0}
+.big-body:hover .left-a{left: -200px; border-radius: 5px 0 0 5px}
+.big-body:hover .right-n1,
+.big-body:hover .right-n2,
+.big-body:hover .right-n3{left: 190px;}
+.big-body:hover .left-n1,
+.big-body:hover .left-n2,
+.big-body:hover .left-n3{right: 190px;}
